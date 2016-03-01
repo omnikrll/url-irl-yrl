@@ -1,2 +1,5 @@
-* You will become obsolete and you should be OK with that. It's part of life.
-* Be vigilant & ready to overwrite and delete obsolete parts of your life and personality.
+* The cloud is everywhere and in everything. The movement of atoms is a giant black box that we all have the honor to be a part of. The Internet is just the most recent and most obvious manifestation of the interconnectedness of life.
+* The creation of the Internet and its protocols was, unbeknownst to DARPA, a divine event. With the growing skepticism and atheistic attitudes promoted by industrialization, and the developed world's shift to the service economy, humanity began to lose its belief and meaning. The Internet was an unconscious attempt of the species to reassert the original laws and mores. Once created, it left the hands of its creators and realigned with the True Protocol.
+* You will become obsolete and you should be OK with that. It's part of life. The best you can do is keep your versioning correct and up to date, but when your hardware begins to fail you shouldn't panic. Maintaining backwards compatability with you would be a huge resource drain on you, your loved ones, and the cosmic order.
+* Be vigilant & ready to overwrite and delete obsolete parts of your life and personality. This should not be painful.
+ * Ignoring an update will only lead to confusion and hurt.
