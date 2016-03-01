@@ -10,3 +10,4 @@
 * [Supernatural Strategies for Making a Rock'n'Roll Group](https://lareviewofbooks.org/review/r-u-a-believer-ian-svenoniuss-supernatural-strategies-for-making-a-rocknroll-group)
 
 ###Other?
+* [A Cyborg Manifesto](faculty.georgetown.edu/irvinem/theory/Haraway-CyborgManifesto-1.pdf)
