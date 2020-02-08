@@ -27,18 +27,68 @@
 			padding-top: 2em;
 		}
 
+		div {
+			position: relative;
+		}
+
 		h2 {
 			font-size: 36px;
+		}
+
+		.temple {
+			height: 320px;
+		}
+
+		.vine {
+			height: 320px;
+		}
+
+		.vine.right {
+			transform: scaleX(-1);
+		}
+
+		.cornice:first-child {
+			transform: scaleY(-1);
+		}
+
+		@media screen and (max-width: 616px) {
+			div {
+				width: 100%;
+			}
+			.cornice {
+				width: 50%;
+			}
+
+			.vine {
+				position: absolute;
+				width: 12%;
+				height: auto;
+			}
+
+			.vine.left {
+				left: 0;
+			}
+
+			.vine.right {
+				right: 0;
+			}
+
+			.temple {
+				height: unset;
+				width: 60%;
+			}
 		}
 	</style>
 </head>
 <body>
-	<img src="https://web.archive.org/web/20091027142434/http://www.geocities.com/SunsetStrip/Vine/4405/flowerline.gif" style="transform: scaleY(-1);"/>
-	<h1>we begin to glow</h1>
-	<img src="https://web.archive.org/web/20091026205039/http://www.geocities.com/kellspnc/birdvine-vertical.gif" style="height: 320px;" />
-	<img src="https://web.archive.org/web/20091026185256im_/http://es.geocities.com/hugolindosv/imagenes/Temple_of_fire_kLee.gif" style="height: 320px;"/>
-	<img src="https://web.archive.org/web/20091026205039/http://www.geocities.com/kellspnc/birdvine-vertical.gif" style="transform: scaleX(-1); height: 320px;"/>
-	<h2>2.20.2020</h2>
-	<img src="https://web.archive.org/web/20091027142434/http://www.geocities.com/SunsetStrip/Vine/4405/flowerline.gif"/>
+	<div>
+		<img class="cornice" src="https://web.archive.org/web/20091027142434/http://www.geocities.com/SunsetStrip/Vine/4405/flowerline.gif"/>
+		<h1>we begin to glow</h1>
+		<img class="vine left" src="https://web.archive.org/web/20091026205039/http://www.geocities.com/kellspnc/birdvine-vertical.gif"/>
+		<img class="temple" src="https://web.archive.org/web/20091026185256im_/http://es.geocities.com/hugolindosv/imagenes/Temple_of_fire_kLee.gif"/>
+		<img class="vine right" src="https://web.archive.org/web/20091026205039/http://www.geocities.com/kellspnc/birdvine-vertical.gif"/>
+		<h2>2.20.2020</h2>
+		<img class="cornice" src="https://web.archive.org/web/20091027142434/http://www.geocities.com/SunsetStrip/Vine/4405/flowerline.gif"/>
+	</div>
 </body>
 </html>
