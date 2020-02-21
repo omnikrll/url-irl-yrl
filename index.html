@@ -6,33 +6,42 @@
 	<meta charset="UTF8"/>
 	<meta lang="en"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="keywords" content="enlightenment, spirituality, luminosity, synchronicity, synergy, optimization, happiness"/>
 
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
 
-	<script>
-		var title = document.title;
-
-		(function titleScroller(text) {
-			document.title = text;
-			setTimeout(function() {
-				titleScroller(text.substr(1) + text.substr(0,1));
-			}, 200); 
-		}(title));
-	</script>
 	<style>
+		* {
+			box-sizing: border-box;
+		}
+
 		body {
+			margin: 0;
 			background-color: pink;
 			font-family: Copperplate, fantasy;
 			text-align: center;
-			padding-top: 2em;
-		}
-
-		div {
-			position: relative;
 		}
 
 		h2 {
 			font-size: 36px;
+		}
+
+		nav {
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 100;
+		}
+
+		section {
+			position: relative;
+			width: 100vw;
+			height: 100vh;
+		}
+
+		.cover-container {
+			position: relative;
+			top: 2em;
 		}
 
 		.temple {
@@ -51,10 +60,79 @@
 			transform: scaleY(-1);
 		}
 
+		.slide-container {
+			position: relative;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			width: 75%;
+			height: 75%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.slide-container img {
+			width: 100%;
+			max-width: 640px;
+			height: auto;
+		}
+
+		@keyframes wobble {
+			10% {
+				transform: skew(-10deg, -10deg);
+			}
+
+			20% {
+				transform: skew(5deg, 5deg);
+			}
+
+			30% {
+				transform: skew(-12deg, -12deg);
+			}
+
+			40% {
+				transform: skew(6deg, 6deg);
+			}
+
+			50% {
+				transform: skew(-15deg, -15deg);
+			}
+
+			60% {
+				transform: skew(7.5deg, 7.5deg);
+			}
+
+			70% {
+				transform: skew(-8deg, -8deg);
+			}
+
+			80% {
+				transform: skew(4deg, 4deg);
+			}
+
+			90% {
+				transform: skew(-12deg, -12deg);
+			}
+
+			100% {
+				transform: skew(6deg, 6deg);
+			}
+		}
+
+		.activated {
+			animation-name: wobble;
+			animation-duration: 2s;
+			animation-iteration-count: infinite;
+			animation-direction: alternate-reverse;
+			transform: skew(0deg, 0deg);
+		}
+
 		@media screen and (max-width: 616px) {
-			div {
+			.cover-container {
 				width: 100%;
 			}
+
 			.cornice {
 				width: 50%;
 			}
@@ -81,14 +159,101 @@
 	</style>
 </head>
 <body>
-	<div>
-		<img class="cornice" src="https://web.archive.org/web/20091027142434/http://www.geocities.com/SunsetStrip/Vine/4405/flowerline.gif"/>
-		<h1>we begin to glow</h1>
-		<img class="vine left" src="https://web.archive.org/web/20091026205039/http://www.geocities.com/kellspnc/birdvine-vertical.gif"/>
-		<img class="temple" src="https://web.archive.org/web/20091026185256im_/http://es.geocities.com/hugolindosv/imagenes/Temple_of_fire_kLee.gif"/>
-		<img class="vine right" src="https://web.archive.org/web/20091026205039/http://www.geocities.com/kellspnc/birdvine-vertical.gif"/>
-		<h2>2.20.2020</h2>
-		<img class="cornice" src="https://web.archive.org/web/20091027142434/http://www.geocities.com/SunsetStrip/Vine/4405/flowerline.gif"/>
-	</div>
+	<nav>
+		<a href="#cover">1</a>
+		<a href="#aten">2</a>
+		<a href="#arpanet">3</a>
+		<a href="#google-aten">4</a>
+		<a href="#outline">5</a>
+		<a href="#url-irl-yrl">6</a>
+		<a href="#keywords">7</a>
+		<a href="#selective-crawling">8</a>
+		<a href="#semantic-structure">9</a>
+		<a href="#content">10</a>
+		<a href="#uptime">11</a>
+		<a href="#linking">12</a>
+		<a href="#cover" id="activate">13</a>
+	</nav>
+	<section id="cover">
+		<div class="cover-container">
+			<img class="cornice" src="https://web.archive.org/web/20091027142434/http://www.geocities.com/SunsetStrip/Vine/4405/flowerline.gif"/>
+			<h1>we begin to glow</h1>
+			<img class="vine left" src="https://web.archive.org/web/20091026205039/http://www.geocities.com/kellspnc/birdvine-vertical.gif"/>
+			<img class="temple" src="https://web.archive.org/web/20091026185256im_/http://es.geocities.com/hugolindosv/imagenes/Temple_of_fire_kLee.gif"/>
+			<img class="vine right" src="https://web.archive.org/web/20091026205039/http://www.geocities.com/kellspnc/birdvine-vertical.gif"/>
+			<h2>2.20.2020</h2>
+			<img class="cornice" src="https://web.archive.org/web/20091027142434/http://www.geocities.com/SunsetStrip/Vine/4405/flowerline.gif"/>
+		</div>
+	</section>
+	<section id="aten">
+		<div class="slide-container">
+			<img src="1200px-Aten.svg.png" alt="Aten"/>
+		</div>
+	</section>
+	<section id="arpanet">
+		<div class="slide-container">
+			<img src="Arpanet_map_1973.jpg" alt="ARPANET Map, 1973"/>
+		</div>
+	</section>
+	<section id="google-aten">
+		<div class="slide-container">
+			<img src="google-aten.png" alt="The Great Crawler"/>
+		</div>
+	</section>
+	<section id="outline">
+		<div class="slide-container">
+			<img src="outline.png" alt="Head and Body"/>
+		</div>
+	</section>
+	<section id="url-irl-yrl">
+		<div class="slide-container">
+			<img src="url-irl-yrl.png" alt="URL + IRL = YRL"/>
+		</div>
+	</section>
+	<section id="keywords">
+		<div class="slide-container">
+			<h2>keywords</h2>
+		</div>
+	</section>
+	<section id="selective-crawling">
+		<div class="slide-container">
+			<h2>selective crawling</h2>
+		</div>
+	</section>
+	<section id="semantic-structure">
+		<div class="slide-container">
+			<h2>semantic structure</h2>
+		</div>
+	</section>
+	<section id="content">
+		<div class="slide-container">
+			<h2>content</h2>
+		</div>
+	</section>
+	<section id="uptime">
+		<div class="slide-container">
+			<h2>uptime</h2>
+		</div>
+	</section>
+	<section id="linking">
+		<div class="slide-container">
+			<h2>linking</h2>
+		</div>
+	</section>
+
+	<script>
+		var title = document.title;
+
+		(function titleScroller(text) {
+			document.title = text;
+			setTimeout(function() {
+				titleScroller(text.substr(1) + text.substr(0,1));
+			}, 200); 
+		}(title));
+
+		document.getElementById('activate').addEventListener('click', function(event) {
+			document.querySelector('.cover-container').classList.add('activated');
+		});
+	</script>
 </body>
 </html>
