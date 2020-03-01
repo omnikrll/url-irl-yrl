@@ -44,8 +44,9 @@
 			top: 2em;
 		}
 
-		.temple {
-			height: 320px;
+		iframe {
+			width: 560px;
+			height: 315px;
 		}
 
 		.vine {
@@ -128,7 +129,7 @@
 			transform: skew(0deg, 0deg);
 		}
 
-		@media screen and (max-width: 616px) {
+		@media screen and (max-width: 730px) {
 			.cover-container {
 				width: 100%;
 			}
@@ -151,11 +152,19 @@
 				right: 0;
 			}
 
-			.temple {
-				height: unset;
+			iframe {
 				width: 72%;
+				height: auto;
+				min-height: 300px;
 			}
 		}
+
+		@media screen and (max-width: 540px) {
+			iframe {
+				min-height: unset;
+			}
+		}
+
 	</style>
 </head>
 <body>
